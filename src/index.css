@@ -1,4 +1,12 @@
+
+* {
+
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
 body {
+  background-color: #ebebeb;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -6,8 +14,235 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.sign-up-container{
+  margin-top: 15%;
+  max-width: 680px;
+}
 
+.content-wrap {
+	display: flex;
+}
+.content-wrap aside {
+  flex: 1 1 250px;
+  max-width: 250px;
+  padding-right: 16px;
+}
+.content-wrap h3 {
+  color: #313131;
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+.content-wrap a {
+  display: block;
+  padding: 8px 16px;
+  text-align: left;
+  color: #888;
+  font-size: 16px;
+  margin-bottom: 16px;
+  border-radius: 999px;
+  text-decoration: none;
+  transition: 0.4s;
+}
+  .content-wrap a:hover {
+    background-color: #cccccc;
+    color:#313131;
+  }
+  main {
+		flex: 1 1 0%;
+		padding: 0px 16px;
+  }
+  .main-head {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .search-box {
+    display: flex;
+    justify-content: flex-end;
+    flex: 1 1 0%;
+  }
+ .search-box input {
+    appearance: none;
+    background: none;
+    outline: none;
+    border: none;
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    padding: 16px;
+    border-radius: 999px;
+    background-color: #313131;
+    transition: 0.4s;
+  }
+.search-box input:focus, input:valid {
+  background-color: #313131;
+  color: #FFF;
+}
+.anime-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 32px;
+  margin: 32px -8px 0px;
+}
+.anime-card{
+  max-width: 250px;
+}
+.anime-list a{
+  text-decoration: none;
+}
+.anime-list figure {
+  
+  display: block;
+  margin-bottom: 16px;
+}
+.anime-list img {
+  display: block;
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 16px;
+
+  transition: 0.4s;
+}
+.anime-card h3 {
+  color: #313131;
+}
+.anime-card figure img:hover {
+ 
+  transform: scale(1.05); 
+}
+.main-header{
+  padding-top:20px;
+ text-align: center;
+ color:#313131;
+}
+.all{
+  color:#f58800;
+}
+.topAnime{
+  background-color: #313131;
+  color:#fff;
+}
+.btn-warning{
+background-color:#f58800 ;
+color:#fff;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.header{
+  background-image: url("https://wallpapercave.com/wp/wp3867557.jpg");
+  background-color:orangered;
+  width: 100%;
+  height:400px;
+}
+.userInfo{
+  padding-top:7%;
+  padding-left:7%; 
+}
+
+.main-content {
+	display: flex;
+  margin-left:1%;
+}
+.main-content aside {
+  flex: 1 1 250px;
+  max-width: 250px;
+  padding-right: 16px;
+}
+.main-content h3 {
+  color: #313131;
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+.main-content a {
+  display: block;
+  padding: 8px 16px;
+  text-align: left;
+  color: #888;
+  font-size: 16px;
+  margin-bottom: 16px;
+  border-radius: 999px;
+  text-decoration: none;
+  transition: 0.4s;
+}
+  .main-content a:hover {
+    background-color: #cccccc;
+    color:#313131;
+  }
+  .checkImg{
+    border-radius: 15px;
+    background-color: none;
+  }
+  .body-content{
+    width:100%;
+  }
+  .list-items{
+    text-decoration: none;
+    list-style-type: none;
+    width: 600px;
+    padding:15px;
+    background-color:#313131;
+    color:#fff;
+    border:solid black 2px;
+    border-radius: 10px;
+    margin:5px;
+  
+  }
+  .saved-item{
+    text-decoration: none;
+    list-style-type: none;
+    width: 600px;
+    padding:15px;
+    background-color:#313131;
+    color:#fff;
+    border:solid black 2px;
+    border-radius: 10px;
+    margin:5px;
+   
+  }
+ .rating{
+   float:right;
+ }
+  .btn-danger{
+   float:right;
+  }
+  .lists{
+    display:flex;
+    margin-top: 15px;
+  }
+ 
+  .list-header{
+    text-align: center;
+  }
+  .pic1{
+    width: 25%;
+  }
+
+  /*Media queries for Responsive design*/
+
+  @media screen and (max-width: 767px) {
+   .main-content aside{
+     display:none;
+   }
+
+   .content-wrap aside{
+     display:none;
+   }
+
+   .top-container{
+    flex-direction: column;
+   }
+   .pic1{
+     width:300px;
+     margin:auto;
+   }
+  
+   .lists{
+     flex-direction: column;
+   }
+ .main-content{
+   width: 100vh;
+ }
+
+  }
