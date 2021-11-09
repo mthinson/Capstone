@@ -1,0 +1,12 @@
+com\claim\repository\SavedRepository.class
+com\claim\capstonebackend\CapstoneBackEndApplication.class
+com\claim\entity\User.class
+com\claim\entity\WatchId.class
+com\claim\repository\UserRepository.class
+com\claim\entity\GuestService.class
+com\claim\entity\Guest.class
+com\claim\repository\WatchRepository.class
+com\claim\service\SendMail.class
+com\claim\controller\UserController.class
+com\claim\entity\Saved.class
+com\claim\config\ApplicationConfig.class
